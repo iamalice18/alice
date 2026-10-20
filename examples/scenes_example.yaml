@@ -1,0 +1,89 @@
+# 장면 파일 예시 (기준 영상 내용을 세로형으로 옮긴 것)
+# - 이 파일을 고쳐서 바로 영상을 만들 수 있습니다:  python make_video.py examples/scenes_example.yaml
+# - quote 의 \n 은 줄바꿈입니다.
+# - narration 을 비워 두면 "인용구 + 해설"을 자동으로 읽습니다.
+# - image: 에 그림 파일 경로를 넣으면 AI 대신 그 그림을 씁니다.
+
+series_title: 문학으로 알아보는 대구 학부모 교육
+
+scenes:
+  - type: intro
+    headline: 새로운 대구 학부모 역량
+    text: 을 문학으로 소개합니다.
+    keywords: [자기이해, 소통·관계형성, 건강지원, 학습지원, 진로지원, 사회적 성장지원, 교육변화 이해, 교육공동체 참여와 협력]
+    caption: 새로운 대구 학부모 역량을 문학으로 알아본다면?
+    narration: 새로운 대구 학부모 역량을, 문학으로 소개합니다.
+
+  - type: quote
+    section: 자기 이해
+    quote: "나는\n과거와 현재와\n미래를 살아갈 거야."
+    source: 『크리스마스 캐럴』 by. 찰스 디킨스
+    original: I will live in the Past, the Present, and the Future.
+    caption: 지나온 나를 돌아보며, 부모인 나를 마주합니다.
+    image_prompt: A Korean woman in her forties seen from behind, standing on a hill and quietly looking at a wide golden sunset sky over a city, her curly hair lit by warm light, contemplative and calm.
+
+  - type: quote
+    section: 소통·관계형성
+    quote: "길들인다는 건\n관계를 맺는다는 뜻이야."
+    source: 『어린 왕자』 by. 앙투안 드 생텍쥐페리
+    original: "Ça signifie « créer des liens... »"
+    caption: 아이의 마음에 닿기 위해, 먼저 귀 기울여 봅니다.
+    image_prompt: A young Korean father in a light blue shirt smiling tenderly at his toddler daughter, who reaches up to touch his collar, seaside in soft morning light, close and affectionate moment, upper half of frame.
+
+  - type: quote
+    section: 건강지원
+    quote: "살아있다는 건 마법이야.\n강해지는 것도 마법이지."
+    source: 『비밀의 화원』 by. 프랜시스 호지슨 버넷
+    original: Being alive is the Magic—being strong is the Magic.
+    caption: 건강한 몸과 마음에서, 아이의 모든 성장이 시작됩니다.
+    image_prompt: A Korean mother and her teenage daughter walking side by side along a sunlit garden path seen from behind, arm in arm, trees and climbing plants around them, healthy and peaceful mood.
+
+  - type: quote
+    section: 학습지원
+    quote: "다른 사람이\n하는 말을 그대로\n믿기만 해서는 안돼.\n스스로 해봐야 한단다."
+    source: 『하이디』 by. 요한나 슈피리
+    original: Man muss nicht alles nur so hinnehmen, was einem ein Peter sagt, man muss selbst probieren.
+    caption: 스스로 배우는 힘이 자라도록, 배움의 자리를 마련합니다.
+    image_prompt: A Korean father wearing safety glasses and work gloves guiding his son as they build a wooden frame together in a bright workshop with a whitewashed brick wall, the boy concentrating and trying it himself.
+
+  - type: quote
+    section: 진로지원
+    quote: "여기서 어느 길로 가야 하나요?\n네가 어디로 가고 싶은지에\n달렸지."
+    source: 『이상한 나라의 앨리스』 by. 루이스 캐럴
+    original: Would you tell me, please, which way I ought to go from here? That depends a good deal on where you want to get to.
+    caption: 아이의 길은, 마음이 향하는 곳에서 시작됩니다.
+    image_prompt: A Korean mother and her young child walking hand in hand down a long tree-lined park path seen from behind, the path splitting ahead into two directions, soft autumn afternoon light.
+
+  - type: quote
+    section: 사회적 성장지원
+    quote: "내 도시를 날아다니며,\n네가 본 것을\n내게 말해주렴."
+    source: 『행복한 왕자』 by. 오스카 와일드
+    original: Fly over my city, little Swallow, and tell me what you see there.
+    caption: 아이의 시선이 자신을 넘어, 타인과 세상을 향하도록 돕습니다.
+    image_prompt: A Korean father and two children riding bicycles together along a riverside path at the edge of a city, small figures in a wide open landscape, soft desaturated sepia tones with gentle sunlight.
+
+  - type: quote
+    section: 교육변화 이해
+    quote: "세상은 작아졌습니다.\n이제는 백 년 전보다\n열 배나 빠르게\n세계를 돌아볼 수 있으니까요."
+    source: 『80일간의 세계일주』 by. 쥘 베른
+    original: "La terre a diminué, puisqu'on la parcourt maintenant dix fois plus vite qu'il y a cent ans."
+    caption: 교육이 달라지면, 아이를 돕는 방법도 달라집니다.
+    image_prompt: A cheerful Korean boy about six years old wearing a homemade silver astronaut costume and helmet, standing in a classroom with a dark green chalkboard and alphabet cards, dreaming of travel, warm light.
+
+  - type: quote
+    section: 교육공동체 참여와 협력
+    quote: "나와 함께 가자.\n너도 음악대에서 네 몫을 맡는 거야.\n나는 류트를 연주하고,\n너는 북을 치는 거지."
+    source: 『브레멘 음악대』 by. 그림 형제
+    original: Komm mit und laß dich auch bei der Musik annehmen.
+    caption: 서로 다른 자리에서, 아이의 성장을 함께 만들어갑니다.
+    image_prompt: A Korean grandfather playing an acoustic guitar while a little boy happily plays a small drum and a girl claps along, in a lush green garden full of plants, joyful community music moment.
+
+  - type: outro
+    headline: "다:함께 성장하는 대구 학부모"
+    text: 미래를 배운다 함께 성장한다
+    caption: 부모의 배움과 변화, 아이와의 관계 변화와 가족의 밝은 미래를 약속합니다.
+    narration: 다 함께 성장하는 대구 학부모. 미래를 배운다, 함께 성장한다.
+
+  - type: end
+    caption: 부모의 배움과 변화, 아이와의 관계 변화와 가족의 밝은 미래를 약속합니다.
+    narration: ""

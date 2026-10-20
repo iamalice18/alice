@@ -32,3 +32,10 @@ __pycache__/
 venv/
 *.egg-info/
 .pytest_cache/
+
+# 영상 생성 결과물 (그림·음성 캐시, 완성 영상)
+work/
+output/
+fonts/*.otf
+fonts/*.ttf
+fonts/*.ttc

@@ -1,0 +1,40 @@
+# 영상 설정 — 필요한 항목만 고치면 됩니다. (빠진 항목은 videogen/config.py 기본값 사용)
+
+series_title: 문학으로 알아보는 대구 학부모 교육
+series_accent: 학부모 교육          # 시리즈 제목에서 파란색으로 크게 보일 부분
+
+# 기준 영상에서 잘라낸 마스코트·로고·모서리 장식 (assets/brand/)
+# 다른 기준 영상으로 바꾸려면: python tools/extract_brand.py 새영상.mp4
+brand:
+  enabled: true
+  scale: 1.28          # 마스코트 크기
+  logo_scale: 1.05     # 흰 띠의 양쪽 로고 크기
+
+openai:
+  # 앞의 모델을 쓸 수 없으면 다음 모델로 자동 전환
+  text_models: [gpt-5-mini, gpt-4.1-mini, gpt-4o-mini]
+  image_models: [gpt-image-2, gpt-image-1]
+  image_size: 1024x1536      # 세로 2:3
+  image_quality: high        # low | medium | high (높을수록 비쌈)
+  tts_model: gpt-4o-mini-tts
+
+style:
+  # 이 그림의 화풍을 따라 그립니다 (기준 영상 장면을 캡처해 넣으면 가장 비슷해짐)
+  reference_image: null      # 예: assets/style_ref.png
+
+narration:
+  enabled: true
+  voice: coral               # alloy, ash, ballad, coral, echo, fable, nova, onyx, sage, shimmer, verse
+  instructions: >-
+    한국어 교육 영상의 내레이터. 따뜻하고 차분하며 신뢰감 있는 목소리.
+    문학 인용구는 한 박자 쉬고 천천히, 감정을 담아 낭독하고, 해설 문장은 또렷하게 읽기.
+
+bgm:
+  path: null                 # 예: assets/bgm.mp3 (저작권 문제없는 음원)
+  volume: 0.22
+  duck: true                 # 내레이션이 나올 때 음악 자동으로 줄이기
+
+video:
+  fps: 30
+  crossfade: 0.6
+  min_scene: 4.0
